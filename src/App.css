@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        /* ### Primary */
+
+        --soft-red: hsl(7, 99%, 70%);
+        --yellow: hsl(51, 100%, 49%);
+        --dark-desaturated-cyan: hsl(167, 40%, 24%);
+        --dark-blue: hsl(198, 62%, 26%);
+        --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+        /* ### Neutral */
+
+        --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+        --very-dark-grayish-blue: hsl(213, 9%, 39%);
+        --dark-grayish-blue: hsl(232, 10%, 55%);
+        --grayish-blue: hsl(210, 4%, 67%);
+        --white: hsl(0, 0%, 100%);
+    }
+    *{
+    }
+}
+@layer components{
+    .App{
+        @apply max-w-[1440px] m-auto
+    }
+    .link{
+        @apply lg:text-white p-4 hover:bg-white hover:bg-opacity-10 hover:rounded-full text-2xl lg:text-xl px-10
+    }
+    .link.active{
+        @apply bg-yellow lg:bg-white text-black rounded-full shadow-lg transition ease-in-out delay-150
+    }
+    .menu-hidden{ @apply transition ease-in-out delay-75 opacity-0 }
+    .menu-show{ @apply transition ease-in-out delay-75 opacity-100 }
+    .card-group{
+        @apply w-full grid grid-cols-1 lg:grid-cols-4
+    }    
+    .card-info{
+        @apply flex flex-col justify-between lg:p-24 text-center lg:text-left p-12 space-y-4 lg:space-y-0 lg:p-44 col-span-2
+    }
+    .card-info h2{
+        @apply text-4xl font-bold font-fraunces
+    }
+    .card-image{
+        @apply col-span-2
+    }
+    .testimonials{
+        @apply flex flex-col items-center justify-center p-10 space-y-10
+    }
+    .testimonials img{
+        @apply rounded-full
+    }
+    h3{
+        @apply  text-4xl font-bold font-fraunces
+    }    
+}
