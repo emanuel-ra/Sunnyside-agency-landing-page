@@ -24,6 +24,8 @@ module.exports = {
         'dark-grayish-blue' : 'var(--dark-grayish-blue)' ,   
         'dark-grayish-blue' : 'var(--dark-grayish-blue)' ,   
         'dark-blue' : 'var(--dark-blue)' ,       
+        'soft-red' : 'var(--soft-red)' , 
+        'yellow' : 'var(--yellow)' ,               
       }),
       textDecorationColor : theme => ({
         'soft-red' : 'var(--soft-red)' ,     

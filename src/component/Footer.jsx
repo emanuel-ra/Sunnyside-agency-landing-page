@@ -6,7 +6,7 @@ import  icon_twitter from "../../images/icon-twitter.svg";
 function Footer() {
   return (
     <>
-    <section className="w-full bg-dark-moderate-cyan p-24 flex flex-col items-center space-y-10 font-barlow text-dark-blue">
+    <footer className="w-full bg-dark-moderate-cyan p-24 flex flex-col items-center space-y-10 font-barlow text-dark-blue">
         <img src={Logo} />
 
         <ul className="flex space-x-4">
@@ -38,7 +38,12 @@ function Footer() {
                 <img src={icon_pinterest} alt="pinterest" />
             </a>
         </article>
-    </section>
+
+        <article class="text-center">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a className="text-yellow" href="https://github.com/emanuel-ra/">Tomas Emanuel Ramirez Abarca</a>.
+        </article>
+    </footer>
     </>
   )
 }
